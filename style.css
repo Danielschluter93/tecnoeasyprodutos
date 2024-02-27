@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: 'Times New Roman', sans-serif;
 }
 body {
     font-family: 'Times New Roman';
@@ -40,10 +41,11 @@ select {
 .container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1200px; /* Defina a largura máxima do conteúdo */
+    justify-content: center; /* Centraliza os elementos na horizontal */
+    max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #e0f2e9; /* Verde claro */
+    background-color: rgba(224, 242, 233, 0.9); /* Usando rgba para adicionar transparência */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -109,14 +111,11 @@ body {
 
 
 .produto {
-    width: calc(33.33% - 20px); /* Calcula a largura para três itens em cada linha */
-   margin-bottom: 20px;
+    flex: 1 1 300px; /* Usando flex para definir a largura mínima e máxima dos itens */
+    margin: 10px; /* Espaçamento entre os itens */
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
-    width: calc(33.333% - 10px);
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -206,4 +205,15 @@ body {
 .comprar-agora:active:before {
     background: #0ca32d;
     transition: background 0s;
+}
+@media (max-width: 768px) {
+    .produto {
+        flex-basis: calc(50% - 20px); /* Altera para 2 itens por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .produto {
+        flex-basis: calc(100% - 20px); /* Altera para 1 item por linha em telas ainda menores */
+    }
 }
