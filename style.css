@@ -12,6 +12,7 @@ body {
     background-color: #000000;
     background-image: url("imagens/fundo-verde-favo-de-mel-tecnologico_23-2148261845.jpg");
     background-size: cover;
+
 }
 
 nav {
@@ -49,7 +50,9 @@ select {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    padding-bottom: 150px; /* Ajuste o valor conforme necessário para compensar a altura do rodapé */
 }
+
 .container h1 { 
     text-align: center; /* Centraliza o texto */
     margin-top: 0; /* Remove a margem superior padrão */
@@ -216,4 +219,34 @@ body {
     .produto {
         flex-basis: calc(100% - 20px); /* Altera para 1 item por linha em telas ainda menores */
     }
+}
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999; /* Para garantir que o footer esteja acima de outros elementos */
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.cnpj {
+    font-size: 14px;
+    margin-right: auto; /* Para empurrar o CNPJ para a esquerda */
+}
+.logofooter {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin-right: 60px; /* Para empurrar a logo para a direita */
 }
