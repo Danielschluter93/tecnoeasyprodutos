@@ -1,0 +1,209 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url("imagens/fundo-verde-favo-de-mel-tecnologico_23-2148261845.jpg");
+    background-size: cover;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav a {
+    display: inline-block;
+    margin-right: 20px;
+    color: #333; /* Cor do texto preto */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Transição suave da cor do texto */
+}
+nav a:hover {
+    color: #007bff; /* Cor do texto azul ao passar o mouse */
+}
+/* Estilos para o menu de seleção de categorias em cascata */
+.select-wrapper {
+    margin-bottom: 20px;
+   
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Defina a largura máxima do conteúdo */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e0f2e9; /* Verde claro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.container h1 { 
+    text-align: center; /* Centraliza o texto */
+    margin-top: 0; /* Remove a margem superior padrão */
+    padding-top: 20px; /* Adiciona um espaço acima do título */
+}
+.titulopagina {
+    font-family: 'Times New Roman';
+    text-align: center; /* Centraliza o texto */
+    margin-top: 0; /* Remove a margem superior padrão */
+    padding-top: 20px; /* Adiciona um espaço acima do título */
+    color: #fff;
+}
+body {
+            background-color: #000000; /* Fundo preto */
+            color: #ffffff; /* Texto branco */
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center; /* Centralizar o conteúdo */
+            padding: 20px; /* Adicionar um espaçamento ao redor do conteúdo */
+        }
+
+        .produto-container {
+            max-width: 1200px; /* Definir a largura máxima do conteúdo */
+            margin: 0 auto; /* Centralizar horizontalmente */
+        }
+
+        .produto-img {
+            max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+        }
+
+        .produto-descricao {
+            margin-top: 20px; /* Adicionar um espaçamento acima da descrição */
+        }
+.logo { 
+    width: 20%;
+    margin: auto;
+    display: block;
+}
+.filtro {
+    border: 2px solid #000; /* Borda preta */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    font-weight: bold; /* Texto em negrito */
+    display: inline-block; /* Exibir como bloco inline */
+}
+.categoria {
+    margin-bottom: 20px;
+}
+.titulo-categoria {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.produto-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.produto {
+    width: calc(33.33% - 20px); /* Calcula a largura para três itens em cada linha */
+   margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(33.333% - 10px);
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+.maisdetalhes a { 
+    text-decoration: none;
+    color: #0ca32d;
+}
+.maisdetalhes a:hover { 
+    color: #ff7f50;
+    
+    
+}
+
+.imgproduto { 
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+.produto:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.produto img {
+    width: 200px;
+    height: auto;
+    border: 4px solid #007bff; /* Cor da borda azul */
+    border-radius: 8px; /* Borda arredondada */
+    transition: border-color 0.3s ease; /* Transição suave ao passar o mouse */
+}
+.produto img:hover {
+    border-color: #0ca32d; /* Cor da borda laranja ao passar o mouse */
+}
+.produto h2 {
+    margin-top: 10;
+    color: #000000; /* Texto preto */
+}
+.produto p {
+    margin-bottom: 0;
+}
+.preco {
+    font-size: 1.2em; /* Tamanho da fonte maior para preço */
+    color: #39a12f; /* verde para destacar o preço */
+    font-weight: bold; /* Texto em negrito */
+    margin-top: 5px; /* Espaço entre o texto e o preço */
+}
+.comprar-agora {
+    --color: #0ca32d;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+}
+.comprar-agora::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+.comprar-agora:hover {
+    color: #fff;
+}
+.comprar-agora:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+.comprar-agora:hover:before {
+    top: -30px;
+    left: -30px;
+}
+.comprar-agora:active:before {
+    background: #0ca32d;
+    transition: background 0s;
+}
